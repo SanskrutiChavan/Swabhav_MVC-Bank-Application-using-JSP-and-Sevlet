@@ -1,0 +1,14 @@
+<div class="col-md-2 bg-light sidebar py-4">
+    <h5 class="text-center mb-3">Customer Panel</h5>
+    <p class="text-center small text-muted">
+        Account: ${sessionScope.customer.accountNumber}
+    </p>
+    <ul class="nav flex-column">
+        <li class="nav-item"><a href="${pageContext.request.contextPath}/customer?action=dashboard" class="nav-link">Dashboard</a></li>
+        <li class="nav-item"><a href="${pageContext.request.contextPath}/customer?action=passbook" class="nav-link">Passbook</a></li>
+        <li class="nav-item"><a href="${pageContext.request.contextPath}/customer?action=credit" class="nav-link">Credit</a></li>
+        <li class="nav-item"><a href="${pageContext.request.contextPath}/customer?action=transfer" class="nav-link">Transfer</a></li>
+        <li class="nav-item"><a href="${pageContext.request.contextPath}/customer?action=profile" class="nav-link">Profile</a></li>
+    </ul>
+</div>
+<div class="col-md-10 p-4">

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" version="5.0">
+  <display-name>7-BankingAppMVC</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+  <jsp-config>
+    <jsp-property-group>
+      <url-pattern>*.jsp</url-pattern>
+      <page-encoding>UTF-8</page-encoding>
+      <trim-directive-whitespaces>true</trim-directive-whitespaces>
+    </jsp-property-group>
+  </jsp-config>
+  <servlet>
+    <description></description>
+    <display-name>AuthenticationFilter</display-name>
+    <servlet-name>AuthenticationFilter</servlet-name>
+    <servlet-class>com.bankingapp.filter.AuthenticationFilter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AuthenticationFilter</servlet-name>
+    <url-pattern>/AuthenticationFilter</url-pattern>
+  </servlet-mapping>
+</web-app>
